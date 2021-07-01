@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Kirang Haerang', cursive;
+    /* text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    background: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+
+/* loader */
+
+.load {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.load img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: (-50%, -50%);
+}
+
+
+/* IMAGE CONTAINER */
+
+.image-container {
+    margin: 10px 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container img {
+    margin-top: 20px;
+    width: 500px;
+    height: 450px;
+    margin-left: 12px;
+}
+
+
+/* Media Query:Large Smartphone*/
+
+@media screen and (max-width:411px) {
+    h1 {
+        font-size: 30px;
+        letter-spacing: 0px;
+    }
+    .image-container img {
+        width: 311px;
+        height: 311px;
+        margin-left: 5px;
+    }
+}
